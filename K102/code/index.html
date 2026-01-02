@@ -1,0 +1,196 @@
+﻿<html> 
+	
+<head> 
+		<meta name="generator" content="">
+		<TITLE>AtPl</TITLE>
+		
+  		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="../en63.tribalwars.net/css_/game/oldstyle52d0.css?1345023673" />
+		<link rel="stylesheet" media="all" type="text/css" href="../code.jquery.com/ui/1.8.23/themes/smoothness/jquery-ui.css" />
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script src="../ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+		<script type="text/javascript" src="plan.js"></script>
+		<style>
+			.center {
+				margin:auto;
+				width:50%;
+			}
+			h3 { text-align: center; }
+			h1 { 
+				text-align: center; 
+				color: SaddleBrown;
+			}
+			.ui-timepicker-div .ui-widget-header { margin-bottom: 8px; }
+			.ui-timepicker-div dl { text-align: left; }
+			.ui-timepicker-div dl dt { height: 25px; margin-bottom: -25px; }
+			.ui-timepicker-div dl dd { margin: 0 10px 10px 65px; }
+			.ui-timepicker-div td { font-size: 90%; }
+			.ui-tpicker-grid-label { background: none; border: none; margin: 0; padding: 0; }
+			#ad {
+				position:absolute;
+				left: 20px;
+				top: 50px;
+				width: 250px;
+			}
+			.ui_tpicker_second_label { font-size:10px !important; }
+			.ui_tpicker_second { margin-left:85px !important; }
+		</style>
+		
+	</head> 
+	<body style="background-image: url('bg-tile.jpg')">     
+		<h1>Μαζικό Πλάνο Επιθέσεων <font color="#0000FF"><font size="3">
+		<span lang="el">( </span> </font><span lang="el"><font size="3">
+		για </span></font> <font color="#0000FF"><span lang="el"> Κ</span>102</font><font color="#FF0000"><span lang="el"> </span></font> <font color="#0000FF">by feng<span lang="el">)</span></font></font><span style="letter-spacing: normal" lang="el"><font color="#FF0000"><span style="font-size: 12px">
+		</span></font><span style="font-size: 12px"> <font color="#800000">(</font></span></span><font color="#800000"><span style="letter-spacing: normal; font-size: 12px" lang="en-us">code:</span><b style="font-family: Verdana, Arial; font-size: 12px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px">
+		</b></font>
+		<b style="color: rgb(255, 0, 0); font-family: Verdana, Arial; font-size: 12px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+		<a href="mailto:B@ldr's"><font color="#800000">B@ldr&#39;s</font></a></b><b style="font-family: Verdana, Arial; font-size: 16px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px"><font color="#800000"><span lang="en-us"> 
+		) </span></font><span lang="el"><font color="#8b0000"> 
+		( Υπευθυνος επιθεσεων...ANSELMO</font><font color="#800000"> 
+		</font><font color="#800080"> 
+		</a> )</font></span></b></h1>
+		<hr />
+		<div id="plan_div" class="center" style="width: 981px; height: 832px">
+			<form name="plan" > 
+				<table width="947">
+					<tr>
+						<td><font size="2">Χρόνος άφιξης</font></td>
+						<td><input id="arrival_time" name="arrival_time" type="text" value="" size="35"></input>
+						<span lang="el">(<font size="2">εδω βαζουμε την 
+						ημερομηνια και ωρα που θελουμε να φτανει η επιθεση</font>)</span></td>
+					</tr>
+					<tr>
+						<td><font size="2">Ποιό αργή μονάδα</font><label for="nuke_unit"><font size="2"> 
+						Νuke</font></label></td>
+						<td>
+							<select name="nuke_unit" id="nuke_unit">
+								<option value=18 >Τσεκούρι</option>
+								<option value=9 >Ανιχνευτής</option>
+								<option value=10 >Ελαφρύ</option>
+								<option value=11 >Βαρύ</option>
+								<option value=30 selected="selected" >Κριός</option>
+							</select>
+						<span lang="el">&nbsp;</span></td>
+					</tr>
+					<tr>
+						<td><font size="2">Ποιό αργή μονάδα υποστήριξης</font></td>
+						<td>
+							<select name="support_unit" id="support_unit" size="1"> 
+								<option value=18 >Δόρυ</option> 
+								<option value=22 selected >Ξίφος</option> 
+								<option value=9 >Ανιχνευτής</option> 
+								<option value=10 >Ελαφρύ</option> 
+								<option value=11 >Βαρύ</option> 
+								<option value=30 >Καταπέλτης</option> 
+							</select>
+							&lt;&lt; <span lang="el">για </span>snipe</td>
+					</tr>
+					<tr>
+						<td><font size="2">Ταχύτητα Κόσμου</font></td>
+						<td>
+						<input id="world_speed" name="world_speed" type="text" value="1.2" size="5"></td>
+					</tr>
+					<tr>
+						<td><font size="2">Ταχύτητα Μονάδων</font></td>
+						<td>
+						<p align="left">
+						<input id="unit_speed" name="unit_speed" type="text" value="0.8" size="8"><span lang="el">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Υ<span lang="el">πολογιστης χρονου</span>
+						<span lang="el">για τα </span>backtime 
+						<a target="_blank" href="http://www.scottseverance.us/html/time_calculator.htm">
+						<span lang="el">
+						<font color="#0000FF"><span style="font-weight: 400">εδώ</span></font></span></a></td>
+					</tr>
+				</table>
+				<table width="775"> 
+					<thead> 
+						<th style="text-align: center">Nobl<span lang="en-us">e</span>s</th> 
+						<th style="text-align: center">Nukes</th> 
+						<th style="text-align: center">B<span lang="el">οηθειες</span></th> 
+						<th style="text-align: center">ΣΤΟΧΟΙ</th> 
+					</thead> 
+					<tbody> 
+						<tr>
+							<td>
+							<textArea id="noble_coords" name="noble_coords" rows=10 cols="21"></textArea></td> 
+							<td><textArea id="nuke_coords" name="nuke_coords" rows=10></textArea></td> 
+							<td><textArea id="support_coords" name="support_coords" rows=10></textArea></td>
+							<td>
+							<textArea id="target_coords" name="target_coords" rows=10 cols="20"></textArea></td>
+						</tr>             
+						<tr>
+							<td>
+								<label for="noble_count"><font size="2">Nobles 
+								ανά
+								</font> </label>
+								<font size="2">στόχο</font><label for="noble_count"> </label>
+								&nbsp;<input id="noble_count" name="noble_count" type="text" value="1" size="2"></input></td>
+							<td>
+								<label for="nuke_count"><font size="2">Nukes ανά 
+								στόχο</font></label>
+								<input id="nuke_count" name="nuke_count" type="text" value="1" size="2"></input></td>
+							<td>
+								<font size="2">Β<label for="support_count">οήθειες 
+								</label>ανά στόχο</font>
+								<input id="support_count" name="support_count" type="text" value="1" size="2"></input></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<input type="button" name="submit" id="submit_btn" class="button" value="ΦΤΙΑΞΕ ΠΛΑΝΟ"></input>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4">
+								Κώδικας γιά επικόληση σε σημειωματάρειο<p>&nbsp;<textArea id="results" name="results" rows=10 cols="93"></textArea>
+							</td> 
+						</tr>
+					</tbody> 
+				</table> 
+				
+				<p><b><span lang="el">Οδηγιες</span>:</b></p>
+				<ul>
+					<li>
+					<p align="left"><span lang="el">Βαζουμε το χρονο που 
+					θελουμε να φτανουν οι επιθεσεις</span><span lang="en-us">.</span></li>
+					<li>
+					<p align="left"><span lang="el">Αν οι επιθεσεις δεν ειναι 
+					με Κριους επιλεγουμε την καταληλη μοναδα στο </span>Ποιό 
+					αργή μονάδα<label for="nuke_unit"> Νuke<span lang="el">. Το 
+					ιδιο και στο </span></label>Ποιό αργή μονάδα υποστήριξης<span lang="el">.</span></li>
+					<li>
+					<p align="left"><span lang="el">Ταχυτητα κοσμου και 
+					ταχυτητα μοναδας δεν τα αλλαζουμε , εκτος και αν το 
+					δουλεψουμε σε αλλον κοσμο .</span></li>
+					<li>
+					<p align="left"><b>Nukes</b> . E<span lang="el">δω βαζουμε 
+					τις συντεταγμενες των χωριων μας που θα φυγουν οι επιθεσεις.</span></li>
+					<li>
+					<p align="left"><b>ΣΤΟΧΟΙ<span lang="el"> . </span></b><span lang="el">
+					Τις συντεταγμενες των χωριων στοχων</span></li>
+					<li>
+								<p align="left">
+								<label for="nuke_count">Nukes ανά στόχο<span lang="el"> 
+								. Βαζουμε ποσες επιθεσεις θελουμε σε καθε στοχο. </span></label>
+					</li>
+					<li>
+					<p align="left"><label for="nuke_count">
+					<font color="#FF0000"><span lang="el"><b>ΠΡΟΣΟΧΗ</b></span><b>.</b></font><span lang="el"> 
+					Τα επιθετικα μας που θα επιλεξουμε πρεπει να ειναι 
+					πολλαπλασια των στοχων. Π.χ. αν θελω να κανω πλανο για 5 
+					επιθεσεις σε 6 χωρια πρεπει να βαλω 30 επιθετικα στο Ν</span>ukes
+					<span lang="el">,6 εχθρικα χωρια στο ΣΤΟΧΟΙ και να επιλεξω
+					</span>Nukes ανά στόχο 5.</label></li>
+					<li>
+					<p align="left"><label for="nuke_count"><span lang="el">
+					Παταμε ΦΤΙΑΞΕ ΠΛΑΝΟ και το αποτελεσμα το κανουμε </span>copy
+					<span lang="el">στο σημειωματαρειο του παιχνιδιου για να 
+					εχουμε τους χρονους.</span></label></li>
+				</ul>
+				
+			</form>     
+		</div>
+		</body> 
+
+<!--  -->
+</html>
