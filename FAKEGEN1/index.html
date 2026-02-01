@@ -2,7 +2,7 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
-    <title>❤️ Face plan by feng for ViVi</title>
+    <title>Face plan by feng for ViVi</title>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -10,93 +10,59 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
     <style>
         body { background-image: url('bg-tile.jpg'); background-repeat: repeat; color: #3e2723; font-family: 'Segoe UI', Tahoma, sans-serif; padding: 10px; font-size: 16px; } 
-        .container { max-width: 1000px; margin: auto; background: rgba(252, 244, 230, 0.96); padding: 15px; border: 2px solid #8b4513; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        
-        /* Τίτλος με κόκκινο for ViVi */
+        .container { max-width: 1150px; margin: auto; background: rgba(252, 244, 230, 0.96); padding: 15px; border: 2px solid #8b4513; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
         .header-feng { text-align: center; margin-bottom: 5px; }
-        .header-feng h1 { color: #8b4513; margin: 0; font-size: 28px; text-transform: none; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+        .header-feng h1 { color: #8b4513; margin: 0; font-size: 28px; }
         .header-feng h1 span.vivi { color: #ff0000; font-weight: bold; }
-        .header-feng p { margin: 2px 0 10px 0; font-style: italic; font-size: 14px; color: #5d2e0d; }
-        
         #date_display { text-align: center; font-weight: bold; font-size: 24px; color: #8b0000; margin-bottom: 15px; }
-        .map-instructions { background: rgba(139, 69, 19, 0.1); padding: 10px; border-radius: 4px; margin-bottom: 12px; font-size: 15px; text-align: center; border: 1px dashed #8b4513; }
-        .map-instructions a { color: #2727F5; font-weight: bold; text-decoration: underline; }
-        
-        .inline-row { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; border-top: 2px solid #8b4513; padding-top: 10px; font-weight: bold; }
-        .small-input { width: 65px !important; text-align: center; border: 1px solid #8b4513; font-size: 16px; padding: 4px; }
-        .date-input { width: 200px !important; border: 1px solid #8b4513; font-weight: bold; cursor: pointer; font-size: 16px; padding: 4px; }
-
-        textarea { width: 100%; height: 115px; border: 1px solid #8b4513; background: #fff; font-family: monospace; font-size: 16px; padding: 10px; box-sizing: border-box; }
-        
-        .btn-calc { background-color: #43b581; color: white; padding: 14px; border: 1px solid #274d32; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; text-transform: uppercase; font-size: 18px; margin-top: 10px; }
-        .btn-copy { background-color: #8b4513; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; text-transform: uppercase; margin-top: 8px; font-size: 16px; display: none; }
-
-        .spoiler-header { background: #d2c09e; padding: 12px; cursor: pointer; font-weight: bold; border: 1px solid #8b4513; display: flex; justify-content: space-between; margin-top: 15px; font-size: 16px; }
-        .spoiler-content { background: #fff; border: 1px solid #8b4513; border-top: none; max-height: 380px; overflow-y: auto; }
-
-        .vis-table { width: 100%; border-collapse: collapse; font-size: 15px; }
-        .vis-table th { background-color: #eee; border: 1px solid #7d5d3b; padding: 10px; position: sticky; top: 0; }
-        .vis-table td { border: 1px solid #7d5d3b; padding: 10px; text-align: center; }
-        
-        .launch-time { color: #ff0000; font-weight: bold; } 
+        .inline-row { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; border-top: 2px solid #8b4513; padding-top: 10px; font-weight: bold; font-size: 13px; flex-wrap: wrap; }
+        .small-input { width: 30px !important; text-align: center; border: 1px solid #8b4513; }
+        .sleep-select { border: 1px solid #d63384; background: #fff0f5; font-weight: bold; color: #d63384; border-radius: 4px; }
+        textarea { width: 100%; height: 115px; border: 1px solid #8b4513; font-family: monospace; font-size: 16px; padding: 10px; box-sizing: border-box; }
+        .btn-calc { background-color: #43b581; color: white; padding: 14px; border: 1px solid #274d32; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; font-size: 18px; margin-top: 10px; }
+        .btn-copy { background-color: #8b4513; color: white; padding: 12px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; margin-top: 8px; display: none; }
+        .vis-table { width: 100%; border-collapse: collapse; }
+        .vis-table th, .vis-table td { border: 1px solid #7d5d3b; padding: 8px; text-align: center; }
+        .launch-time { color: #ff0000; font-weight: bold; }
         .footer-gemini { text-align: center; margin-top: 25px; font-size: 24px; font-weight: bold; color: #5d2e0d; border-top: 3px dashed #8b4513; padding-top: 15px; }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <div class="header-feng">
-        <h1>Face plan by feng <span class="vivi">for ViVi</span></h1>
-        <p>Βασισμένο στον κώδικα της Sophie (Shinko to Kuma)</p>
-    </div>
-    
+    <div class="header-feng"><h1>Face plan by feng <span class="vivi">for ViVi</span></h1><p>Βασισμένο στον κώδικα της Sophie (Shinko to Kuma)</p></div>
     <div id="date_display"></div>
-
-    <div class="map-instructions">
-        🧠 <b>Εισαγωγή:</b> Απλά 6 νούμερα ή script tsalkapone για <a href="https://forum.fyletikesmaxes.gr/index.php?threads/30021/" target="_blank">MAP</a>.
-    </div>
-    
     <div class="inline-row">
-        <label>Άφιξη:</label><input type="text" id="datetimepicker" class="date-input" readonly>
-        <label>Μονάδα:</label>
-        <select id="unit" style="border: 1px solid #8b4513; font-size: 15px; padding: 5px;">
-            <option value="30">Κριός</option>
-     /      <οption value="30">Καταπέλτης (35')</option>
-        </select>
+        <label>Άφιξη:</label><input type="text" id="datetimepicker" style="width:150px;" readonly>
+        <label>Μονάδα:</label><select id="unit"><option value="30">Κριός (30')</option></select>
         <label>Κ:</label><input type="text" id="world_speed" class="small-input" value="1.2">
         <label>Μ:</label><input type="text" id="unit_speed" class="small-input" value="0.8">
+        
+        <label style="color:#d63384; margin-left:5px;">💤 Ύπνος από:</label>
+        <select id="sleep_from" class="sleep-select">
+            <option value="0">00:00</option><option value="1">01:00</option><option value="2">02:00</option><option value="3">03:00</option><option value="4">04:00</option><option value="5">05:00</option><option value="6">06:00</option><option value="7">07:00</option><option value="8">08:00</option><option value="9">09:00</option><option value="10">10:00</option><option value="11">11:00</option><option value="12">12:00</option><option value="13">13:00</option><option value="14">14:00</option><option value="15">15:00</option><option value="16">16:00</option><option value="17">17:00</option><option value="18">18:00</option><option value="19">19:00</option><option value="20">20:00</option><option value="21">21:00</option><option value="22">22:00</option><option value="23">23:00</option>
+        </select>
+        <label style="color:#d63384;">έως:</label>
+        <select id="sleep_to" class="sleep-select">
+            <option value="0">00:00</option><option value="1">01:00</option><option value="2">02:00</option><option value="3">03:00</option><option value="4">04:00</option><option value="5">05:00</option><option value="6">06:00</option><option value="7" selected>07:00</option><option value="8">08:00</option><option value="9">09:00</option><option value="10">10:00</option><option value="11">11:00</option><option value="12">12:00</option><option value="13">13:00</option><option value="14">14:00</option><option value="15">15:00</option><option value="16">16:00</option><option value="17">17:00</option><option value="18">18:00</option><option value="19">19:00</option><option value="20">20:00</option><option value="21">21:00</option><option value="22">22:00</option><option value="23">23:00</option>
+        </select>
+        
+        <label style="margin-left:10px; background:#fce4ec; padding:2px 5px; border-radius:4px;">
+            <input type="checkbox" id="no_sleep"> <b>Δεν κοιμάμαι</b>
+        </label>
     </div>
-
     <div style="display:flex; gap:12px;">
-        <div style="flex:1;">
-            <button style="background:#b71c1c; color:#fff; border:none; padding:5px 10px; cursor:pointer; font-size:12px; border-radius:3px; margin-bottom:5px;" onclick="$('#sources').val('')">Clear ✖</button>
-            <textarea id="sources" oninput="autoCoord(this)" placeholder="Nukes (6 νούμερα)"></textarea>
-        </div>
-        <div style="flex:1;">
-            <button style="background:#b71c1c; color:#fff; border:none; padding:5px 10px; cursor:pointer; font-size:12px; border-radius:3px; margin-bottom:5px;" onclick="$('#targets').val('')">Clear ✖</button>
-            <textarea id="targets" oninput="autoCoord(this)" placeholder="Στόχοι (6 νούμερα)"></textarea>
-        </div>
+        <div style="flex:1;"><textarea id="sources" oninput="autoCoord(this)" placeholder="Nukes"></textarea></div>
+        <div style="flex:1;"><textarea id="targets" oninput="autoCoord(this)" placeholder="Στόχοι"></textarea></div>
     </div>
-
-    <button class="btn-calc" onclick="calculatePlan()">🔥 ΦΤΙΑΞΕ ΠΛΑΝΟ & ΤΑΞΙΝΟΜΗΣΕ</button>
+    <button class="btn-calc" onclick="calculatePlan()">❤️ ΦΤΙΑΞΕ ΠΛΑΝΟ & ΤΑΞΙΝΟΜΗΣΕ</button>
     <button id="copyBtn" class="btn-copy" onclick="copyToClipboard()">📑 ΑΝΤΙΓΡΑΦΗ BB-CODE</button>
-    
-    <div id="spoiler" style="display:none;">
-        <div class="spoiler-header" onclick="$('#s_content').slideToggle();">
-            <span>ΛΙΣΤΑ ΕΠΙΘΕΣΕΩΝ (24h Format)</span>
-            <span id="count_label" style="background:#8b4513; color:#fff; padding:0 10px; border-radius:3px;"></span>
-        </div>
-        <div id="s_content" class="spoiler-content"><div id="results_table"></div></div>
-    </div>
-
-    <div class="footer-gemini">✨ Developed with <a href="https://gemini.google.com/app" target="_blank" style="color:#8b4513; text-decoration:none;">Gemini 3 AI</a></div>
+    <div id="spoiler" style="display:none; margin-top:15px;"><div id="results_table"></div></div>
+    <div class="footer-gemini">✨ Developed with Gemini 3 AI</div>
 </div>
-
 <audio id="alertSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg"></audio>
-
 <script>
 function autoCoord(el) {
-    let val = el.value.replace(/[^0-9\n|]/g, ''); 
+    let val = el.value.replace(/[^0-9\n|]/g, '');
     let lines = val.split('\n');
     let newLines = lines.map(line => {
         let clean = line.replace(/[^0-9]/g, '');
@@ -105,25 +71,21 @@ function autoCoord(el) {
     });
     el.value = newLines.join('\n').replace(/\n\n/g, '\n');
 }
-
 function updateServerTime() {
     var t = new Date();
-    document.getElementById('date_display').innerHTML = "Ώρα server: " + 
-        ("0" + t.getHours()).slice(-2) + ":" + ("0" + t.getMinutes()).slice(-2) + ":" + ("0" + t.getSeconds()).slice(-2);
+    document.getElementById('date_display').innerHTML = "Ώρα server: " + ("0" + t.getHours()).slice(-2) + ":" + ("0" + t.getMinutes()).slice(-2) + ":" + ("0" + t.getSeconds()).slice(-2);
 }
-setInterval(updateServerTime, 1000); updateServerTime();
-
-$(function() {
-    $('#datetimepicker').datetimepicker({ dateFormat: 'dd/mm/yy', timeFormat: 'HH:mm:ss', showSecond: true });
-    $('#datetimepicker').datetimepicker('setDate', new Date());
-});
+setInterval(updateServerTime, 1000);
+$(function() { $('#datetimepicker').datetimepicker({ dateFormat: 'dd/mm/yy', timeFormat: 'HH:mm:ss' }); $('#datetimepicker').datetimepicker('setDate', new Date()); });
 
 function calculatePlan() {
     const hitTimeStr = $('#datetimepicker').val();
     const parts = hitTimeStr.match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2}):(\d{2})/);
     const hitTimeMs = new Date(parts[3], parts[2]-1, parts[1], parts[4], parts[5], parts[6]).getTime();
-    const msPerField = (parseInt($('#unit').val()) / (parseFloat($('#world_speed').val()) * parseFloat($('#unit_speed').val()))) * 60 * 1000;
+    const msPerField = (30 / (parseFloat($('#world_speed').val()) * parseFloat($('#unit_speed').val()))) * 60 * 1000;
     const sources = $('#sources').val().trim().split('\n'), targets = $('#targets').val().trim().split('\n');
+    const sFrom = parseInt($('#sleep_from').val()), sTo = parseInt($('#sleep_to').val());
+    const isNoSleep = $('#no_sleep').is(':checked');
     let attacks = [];
 
     sources.forEach(s => {
@@ -133,30 +95,28 @@ function calculatePlan() {
                 const dist = Math.sqrt(Math.pow(sC[1]-tC[1], 2) + Math.pow(sC[2]-tC[2], 2));
                 const lMs = hitTimeMs - (dist * msPerField);
                 const d = new Date(lMs);
+                const lHour = d.getHours();
+                if (!isNoSleep && (lHour >= sFrom && lHour < sTo)) return;
                 const lStr = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2) + ":" + ("0" + d.getSeconds()).slice(-2) + " " + ("0" + d.getDate()).slice(-2) + "/" + ("0" + (d.getMonth() + 1)).slice(-2);
                 attacks.push({ from: s.trim(), to: t.trim(), lMs: lMs, lStr: lStr });
             }
         });
     });
     attacks.sort((a, b) => a.lMs - b.lMs);
-
-    let tableHtml = `<table class="vis-table"><tr><th>Από</th><th>Προς</th><th>Εκκίνηση (24h)</th></tr>`;
-    let bb = ""; 
+    let tableHtml = `<table class="vis-table"><tr><th>Από</th><th>Προς</th><th>Εκκίνηση</th></tr>`;
+    let bb = "";
     attacks.forEach((att) => {
         tableHtml += `<tr><td>${att.from}</td><td>${att.to}</td><td class="launch-time">${att.lStr}</td></tr>`;
         bb += `[unit]ram[/unit] [coord]${att.from}[/coord] -> [coord]${att.to}[/coord] | [b][color=#ff0000]${att.lStr}[/color][/b]\n`;
     });
-
     $('#results_table').html(tableHtml + "</table>");
     $('#bbcopy').remove(); $('body').append(`<textarea id="bbcopy" style="display:none;">${bb}</textarea>`);
-    $('#count_label').text(attacks.length + " επιθ.");
-    $('#spoiler').show(); $('#s_content').show(); $('#copyBtn').show();
+    $('#spoiler').show(); $('#copyBtn').show();
     document.getElementById('alertSound').play();
 }
-
 function copyToClipboard() {
     var c = document.getElementById("bbcopy"); c.style.display = "block"; c.select(); document.execCommand("copy"); c.style.display = "none";
-    alert("Το πλάνο αντιγράφηκε!");
+    var btn = document.getElementById("copyBtn"); btn.innerHTML = "✅ ΑΝΤΙΓΡΑΦΗΚΕ!"; setTimeout(function(){ btn.innerHTML = "📑 ΑΝΤΙΓΡΑΦΗ BB-CODE"; }, 2000);
 }
 </script>
 </body>
