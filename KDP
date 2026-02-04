@@ -1,0 +1,178 @@
+KDP/index.html
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>Ξενοφώντας Δ. Παναγιωτόπουλος</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            background-color: #fdfaf5;
+            font-family: "Comic Sans MS", cursive;
+            font-size: 16px;
+            color: #1b3022;
+        }
+
+        /* Sidebar: Πράσινο Κυπαρισσί */
+        nav {
+            width: 220px;
+            background-color: #3b8164; 
+            color: #ffffff;
+            height: 100vh;
+            position: fixed;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .category-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d4e5d6;
+            margin-top: 15px;
+            display: block;
+            border-bottom: 2px solid #458a58;
+            padding-bottom: 5px;
+        }
+
+        nav ul { list-style: none; padding: 0; margin-top: 10px; }
+        nav li { margin: 10px 0; }
+        nav a { 
+            color: #ffffff; 
+            text-decoration: none; 
+            font-size: 16px; 
+            display: block;
+        }
+        nav a:hover { text-decoration: underline; color: #ffd700; }
+
+        /* Στολισμένα Credits */
+        .credits-box {
+            margin-top: auto; /* Πάει στο κάτω μέρος του μενού */
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.08);
+            border-radius: 8px;
+            border-left: 4px solid #ffd700;
+            line-height: 1.4;
+        }
+
+        .credits-box strong {
+            color: #ffd700;
+            font-size: 15px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .credits-box span {
+            color: #ffffff;
+            font-size: 14px;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .ai-credit {
+            font-style: italic;
+            color: #a5c0a9;
+            font-size: 12px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 5px;
+        }
+
+        /* Κύριο μέρος */
+        main {
+            margin-left: 220px;
+            padding: 30px 50px;
+            width: 100%;
+            position: relative;
+        }
+
+        /* Φωτογραφία με μπλε τόξο */
+        .author-photo-top {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            width: 200px; 
+            height: 200px;
+            border-radius: 70%;
+            border: 5px solid #0000FF; 
+            object-fit: cover;
+        }
+
+        .header-text {
+            border-bottom: 3px solid #316841;
+            padding-bottom: 15px;
+            max-width: 65%;
+        }
+
+        .main-heading { font-size: 30px; margin: 0; }
+        .sub-heading { font-size: 
+20px; font-style: italic; color: #2d751a; margin: 5px 0 0 0; }
+
+        .content-area {
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 800px;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+
+<nav> 
+    <span class="category-title">ΕΡΓΟΓΡΑΦΙΑ</span>
+    <ul>
+        <li><a href="f1/index.html">Δέσμη 1</a></li>
+        <li><a href="f2/index.html">Δέσμη 2</a></li>
+        <li><a href="f3/index.html">χαρτοπετσετα1</a></li>
+        <li><a href="f4/index.html">Δέσμη 12</a></li>
+        <li><a href="f5/index.html">Δέσμη 21</a></li>
+        <li><a href="f6/index.html">Αναμνήσεις</a></li>
+        <li><a href="f7/index.html">Δέσμoth 12</a></li>
+        <li><a href="f8/index.html">Δέσμios 21</a></li>
+        <li><a href="f9/index.html">Ανα...na</a></li>
+    </ul>
+<div class="credits-box">
+    <strong>Επικοινωνία</strong>
+    <span><a href="mailto:x.d.panag@gmail.com" style="color:white; text-decoration:none;">x.d.panag@gmail.com</a></span>
+
+    <strong>Ιδέα - Κατασκευή</strong>
+    <span>Α. Παναγιωτ.<br>
+    <a href="mailto:xalbant@gmail.com" style="color:white; text-decoration:none;">xalbant@gmail.com</a></span>
+
+    <div class="ai-credit">
+        <strong>Υλοποίηση Κώδικα</strong>
+        <a href="https://gemini.google.com/" target="_blank" style="color:#a5c0a9; text-decoration:none;">Gemini 3 AI</a>
+    </div>
+</div>
+</nav>
+
+<main>
+    <img src="ksen1.jpg" alt="Ξενοφώντας" class="author-photo-top">
+
+    <div class="header-text">
+        <h1 class="main-heading">Ξενοφώντας Δ. Παναγιωτόπουλος</h1>
+        <p class="sub-heading">"Πάνω στη γη θα πατώ σεμνά & θ’ αλαφροδιαβαίνω"</p>
+    </div>
+
+    <div class="content-area">
+•	Ο Ξενοφώντας Δημητρίου Παναγιωτόπουλος 
+•	γεννήθηκε το 1946 στο ΧΑΛΒΑΤΣΟ (Κεφαλόβρυσο) Μεσσηνίας. 
+•	Το 5ο από τα 6 παιδιά μιας φτωχής αγροτικής οικογένειας. 
+•	Τελείωσε το δημοτικό στο χωριό και το σχολαρχείο στον ΑΡΙΣΤΟΜΕΝΗ. 
+•	Ανήσυχο πνεύμα από μικρός, του άρεσε να "ρουφάει" τα βιβλία και να γράφει.
+•	Μετακόμισε τη δεκαετία του '50 στην ΑΘΗΝΑ και φοίτησε στο ΕΜΠ ως τοπογράφος.
+•	Εργάστηκε ως ξυλουργός στο ξυλουργείο του αδερφού του Γιώργου και ως πωλητής βιβλίων.
+•	Στην στρατιωτική του θητεία έγραψε το σενάριο της ταινίας ''ΕΥΔΟΚΙΑ'', για την οποία ο Μάνος Λοΐζος συνέθεσε το γνωστό "Ζεϊμπέκικο της Ευδοκίας".
+•	Παντρεύτηκε την Ξένη, την ‘’Ξενούλα’’ του, και απέκτησαν δύο παιδιά, τον Δημήτρη και την Σταυρούλα.
+•	Εργάστηκε για χρόνια στο ΙΚΑ-ΕΦΚΑ ως ελεγκτής εργασίας. 
+•	Συνταξιούχος πλέον, συνεχίζει να γράφει...
+
+
+    </div>
+</main>
+
+</body>
+</html>
