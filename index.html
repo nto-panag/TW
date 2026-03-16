@@ -1,0 +1,47 @@
+<style>
+  body { background-color: black; color: #00FF00; font-family: "Courier New", Courier, monospace; font-size: 18px; padding: 20px; overflow: hidden; }
+  #cmd { line-height: 1.5; }
+  .error { color: #FF0000; font-weight: bold; }
+</style>
+
+<div id="cmd"></div>
+
+<script>
+  const lines = [
+    "> CONNECTING TO SERVER...",
+    "> CONNECTION ESTABLISHED AT PORT 8080",
+    "> BYPASSING SECURITY PROTOCOLS...",
+    "> ACCESSING ROOT DIRECTORY...",
+    "> WARNING: UNAUTHORIZED ACCESS DETECTED!",
+    "> TRACING IP ADDRESS...",
+    "> IP FOUND: 192.dav.inci.9845",
+// Μπορείς να το αφήσεις έτσι, είναι κλασικό ψέμα
+    "> INITIATING SYSTEM_WIPE.SH",
+    "> DELETING SYSTEM32 FILES...",
+    "> ERROR: KERNEL PANIC!",
+    "> UPLOADING VIRUS: 'k104_WARRIOR_V3'",
+    "> SYSTEM FAILURE IN 2...",
+    "> 1...",
+    "> sleep...",
+  ];
+
+  let i = 0;
+  function typeWriter() {
+    if (i < lines.length) {
+      let div = document.getElementById("cmd");
+      let newLine = document.createElement("p");
+      if (lines[i].includes("ERROR") || lines[i].includes("WARNING")) {
+        newLine.className = "error";
+      }
+      newLine.innerHTML = lines[i];
+      div.appendChild(newLine);
+      i++;
+      setTimeout(typeWriter, 400); // Ταχύτητα που εμφανίζονται οι γραμμές
+    } else {
+      setTimeout(() => {
+        window.location.href = "https://www.fyletikesmaxes.gr/"; // Τους πετάει πίσω στην αρχική
+      }, 800);
+    }
+  }
+  typeWriter();
+</script>
