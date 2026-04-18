@@ -4,7 +4,7 @@
   .error { color: #FF0000; font-weight: bold; }
 </style>
 
-<div id="cmd" class="container" oncontextmenu="return false;"></div>
+<body oncontextmenu="return false;">
 
 <script>
   const lines = [
@@ -38,11 +38,11 @@
       newLine.innerHTML = lines[i];
       div.appendChild(newLine);
       i++;
-      setTimeout(typeWriter, 300); // Ταχύτητα που εμφανίζονται οι γραμμές
+      setTimeout(typeWriter, 330); // Ταχύτητα που εμφανίζονται οι γραμμές
     } else {
       setTimeout(() => {
         const win = window.open("https://nto-panag.github.io/TW/", "_blank");
-      }, 1000);
+      }, 1200);
     }
   }
   typeWriter();
