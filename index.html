@@ -3,9 +3,7 @@
   #cmd { line-height: 1.5; }
   .error { color: #FF0000; font-weight: bold; }
 </style>
-
 <body oncontextmenu="return false;">
-
 <script>
   const lines = [
     "> CONNECTING TO SERVER.....🪓",
@@ -38,7 +36,7 @@
       newLine.innerHTML = lines[i];
       div.appendChild(newLine);
       i++;
-      setTimeout(typeWriter, 330); // Ταχύτητα που εμφανίζονται οι γραμμές
+      setTimeout(typeWriter, 340); // Ταχύτητα που εμφανίζονται οι γραμμές
     } else {
       setTimeout(() => {
         const win = window.open("https://nto-panag.github.io/TW/", "_blank");
