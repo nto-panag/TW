@@ -1,9 +1,26 @@
-<style>
-  body { background-color: black; color: #00FF00; font-family: "Courier New", Courier, monospace; font-size: 16px; padding: 20px; overflow: hidden; }
-  #cmd { line-height: 1.5; }
-  .error { color: #FF0000; font-weight: bold; }
-</style>
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>TW-Special Edition</title>
+    <style>
+        body { 
+            background-color: black; 
+            color: #00FF00; 
+            font-family: "Courier New", Courier, monospace; 
+            font-size: 16px; 
+            padding: 20px; 
+            overflow: hidden; 
+        }
+        #cmd { line-height: 1.5; }
+        .error { color: #FF0000; font-weight: bold; }
+        p { margin: 5px 0; } /* Για να μην έχουν μεγάλα κενά οι γραμμές */
+    </style>
+</head>
 <body oncontextmenu="return false;">
+
+    <div id="cmd"></div>
+
 <script>
   const lines = [
     "> CONNECTING TO SERVER.....🪓",
@@ -19,7 +36,7 @@
     "> ERROR: KERNEL PANIC!💥",
     "> UPLOADING VIRUS: 'K104_WARRIOR_V3... ANSELMO. 💣'",
     "> 🛶 SYSTEM FAILURE IN ...",
-	"> 3...",
+    "> 3...",
     "> 2...",
     "> 1...",
     ">  Παμε μια γυρα ακομα... GO TO 10 🏃 ",
@@ -36,12 +53,16 @@
       newLine.innerHTML = lines[i];
       div.appendChild(newLine);
       i++;
-      setTimeout(typeWriter, 340); // Ταχύτητα που εμφανίζονται οι γραμμές
+      setTimeout(typeWriter, 340);
     } else {
       setTimeout(() => {
-        const win = window.open("https://nto-panag.github.io/TW/index.html", "_blank");
+        window.location.href = "https://nto-panag.github.io/TW/"; 
+        // Σημείωση: Το window.open μπορεί να το κόψει ο browser ως popup. 
+        // Το location.href είναι πιο σίγουρο.
       }, 1200);
     }
   }
   typeWriter();
 </script>
+</body>
+</html>
